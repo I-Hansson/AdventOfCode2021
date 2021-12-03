@@ -1,10 +1,11 @@
 
-### Part 1 ###
+
 lines = open('input.txt').read().splitlines()
 print(lines)
+
+### Part 1 ###
 gamma = ""
 epsilon = ""
-
 for x in zip(*lines):
     if x.count('0') > x.count('1'):
         gamma += '0'
